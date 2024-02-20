@@ -8,13 +8,7 @@ public:
         this->Energia - Energia;
     };
     ~Alimento(){}
-    int ;
+    int ExtraerEnergia(){
+        return Energia;
+    } ;
 };
-
-Alimento::Alimento(/* args */)
-{
-}
-
-Alimento::~Alimento()
-{
-}
