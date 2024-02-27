@@ -26,6 +26,7 @@ Mascota *- Vivienda
 Mascota *- Salud
 Mascota *- Emocion
 Mascota *- Arma
+Mascota o- Arma
 Armadura *- Salud
 Emocion <- Salud
 
