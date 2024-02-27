@@ -1,9 +1,8 @@
 #include <iostream>
+using namespace std;
 #include <Mascota.hpp>
 #include <Alimento.hpp>
-using namespace std;
-int main(int argc, char const *argv[])
-{
+int main (int argc, char const *argv[]){
     Mascota m1;
     Mascota m2;
     Mascota m3;
@@ -11,6 +10,5 @@ int main(int argc, char const *argv[])
     m1.Comer(alimento);
     m2.Comer(alimento);
     m3.Comer(alimento);
-    cout<<"Mascota "<<m1.LeerEnergia<<endl; 
-    return 0;
+    cout<<"Mascota "<<m1.LeerEnergia()<<endl;
 }

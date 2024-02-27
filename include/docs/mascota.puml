@@ -1,0 +1,34 @@
+@startuml mascota
+package Inventario{
+    class Armadura
+    class Arma
+}
+package Vivienda{
+    class Automovil
+
+}
+
+class Mascota {
+- salud : Salud
++Comer()
+}
+class Salud
+class Armadura
+class Automovil
+class Emocion
+class Salud
+class Arma
+
+
+
+Mascota "1" o- "1 " Armadura
+Mascota *- Vivienda  
+Mascota *- Salud
+Mascota *- Emocion
+Mascota *- Arma
+Armadura *- Salud
+Emocion <- Salud
+
+
+
+@enduml

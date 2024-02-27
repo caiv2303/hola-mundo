@@ -5,14 +5,16 @@ class Mascota
 private:
     int Felicidad;
     int Energia;
-
 public:
-    Mascota() {}
+    Mascota() {
+        this->Energia=0;
+    }
     ~Mascota() {}
     void Comer(Alimento alimento){
-        this->Energia+=alimento.ExtraerEnergia;
+            this ->Energia +=alimento.ExtraerEnergia();
     }
-    void LeerEnergia(){
-        this->Energia;
+    int LeerEnergia(){
+        return this ->Energia;
+
     }
 };
